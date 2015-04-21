@@ -4,7 +4,7 @@
 ## calculate a new inverse and cache the inverse to the special object
 ## above.
 
-## Create a special object that stores a matrix and caches its inverse
+## Create a special object that stores a matrix and cache its inverse
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
     set <- function(y){
@@ -23,7 +23,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Cache the inverse of the matrix made by makeCacheMatrix function
 ## or calculate the inverse first time.
-
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
     inv <- x$getinverse()
